@@ -2,14 +2,117 @@
 <html>
 <head>
   <title>Chat Pack Soundboard</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+  <script>
+    function playAudio(url) {
+      var a = new Audio(url);
+      a.play();
+    }
+   </script>
+
+  <h1>Chat Pack Soundboard</h1>
+
+  <h2>Small Bits:</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3>Rap Air Horn</h3>
+      <img src="Sound Effects/airhorn.png" onclick="playAudio('Sound Effects/instantrapairhorn.mp3')">
+    </div>
+    <div class="grid-item">
+      <h3>Basketball Buzzer</h3>
+      <img src="Sound Effects/basketball.png" onclick="playAudio('Sound Effects/BasketballBuzzer.mp3')">
+    </div>
+    <div class="grid-item">
+      <h3>Ben's Bone</h3>
+      <img src="Sound Effects/bensface.png" onclick="playAudio('Sound Effects/InitialD.mp3')">
+    </div>
+    <div class="grid-item">
+      <h3>Guitar Bit Break</h3>
+      <audio controls="controls" id="audio_player">
+        <source src="GuitarLoop.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Funky Horns Sting</h3>
+      <audio controls="controls" id="audio_player">
+        <source src="FunkyIntro.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Tenacious D Sting</h3>
+      <audio controls="controls" id="audio_player">
+        <source src="Quick Metal Riff 1.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <h2>Intro & Outro Songs:</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3>Sea Shanty Intro</h3>
+      <p>Very spongebob-esque</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Intro Songs/Windy Old Weather - thin.mp3" type="audio/wav"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>German Shanty</h3>
+      <p>Not as good as the sea shanty</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Intro Songs/Bavarian Seascape.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Blues Infusion Intro</h3>
+      <p>Harmonica and keyboard, chill</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Intro Songs/Blues_Infusion.mp3" type="audio/wav"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Toe Jam Intro</h3>
+      <p>Oldschool hand clap beat</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Intro Songs/Toe_Jam.mp3" type="audio/wav"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Sunny Morning Intro</h3>
+      <p>I'm on 6 beers, 1 joint, and a cig...</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Intro Songs/Toe_Jam.mp3" type="audio/wav"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>Hand Clap Funky Outro</h3>
+      <p>Great sax, USE THIS</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Outro Songs/RESPECOGNIZE.mp3" type="audio/wav"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h3>"Scratch the Itch" Outro</h3>
+      <p>Low key funky outro</p>
+      <audio controls="controls" id="audio_player" loop>
+        <source src="Outro Songs/Scratch_the_Itch.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
 </body>
-
-<footer>
-  <p>Copyright 2019 Chat Pack</p>
-</footer>
-
 </html>
