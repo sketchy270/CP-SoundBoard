@@ -1,0 +1,46 @@
+* {
+  background-color: #ccc;
+  padding: 2px;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  position: relative;
+}
+
+img {
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
+.grid-item {
+  text-align: left;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  text-align: left;
+}
+
+audio {
+  width: 250px;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.top-pick {
+  color: red;
+  font-weight: bold;
+}
